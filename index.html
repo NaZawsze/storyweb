@@ -30,7 +30,7 @@
 </head>
 <body>
     <div id="bg-music">
-        <audio src="music/desk-bgm.e1c8e207.mp3" loop autoplay></audio>
+        <audio src="music/dianxin.ogg" loop autoplay></audio>
     </div>
     <div id="music-button">
         <img id = "music-off" src="img/audio-off.89ea1960.png" alt="">
@@ -103,7 +103,7 @@
         // 创建纹理对象
         var pendantLighttexture = new THREE.TextureLoader();
         // 加载纹理图片
-        var pendantLighttextureload = pendantLighttexture.load("img/1fe2462e-7aaa-4c13-ad10-7ff6fa973d31.png");
+        var pendantLighttextureload = pendantLighttexture.load("img/book.png");
         // 将纹理叠加到材质上
         pendantLightMaterial.map = pendantLighttextureload;
         //png图片透明部分开启
@@ -116,8 +116,8 @@
         var pendantLightMesh = new THREE.Mesh(pendantLightBox,pendantLightMaterial);
         pendantLightMesh.name = "pendantLight";
         // 移动模型
-        pendantLightMesh.translateX(5.5);
-        pendantLightMesh.translateY(1.6);
+        pendantLightMesh.translateX(5);
+        pendantLightMesh.translateY(6);
         pendantLightMesh.translateZ(-30);
         // 旋转模型
         pendantLightMesh.rotation.x = -0.4;
@@ -147,6 +147,25 @@
         // 将模型添加到场景
         scene.add(arrowsMesh);
 
+        // 创建矩形模型
+        var textplane = new THREE.PlaneGeometry(9,1.8);
+        // 创建基础材质
+        var textplaneMaterial = new THREE.MeshBasicMaterial();
+        // 创建纹理对象
+        var texttexture = new THREE.TextureLoader();
+        // 加载纹理图片
+        var text = textureloader.load("img/xiaoshuoguan.png");
+        // 将纹理叠加到材质上
+        textplaneMaterial.map = text;
+        // png图片透明部分开启
+        textplaneMaterial.transparent = true;
+        // 将材质叠加到模型上
+        var textMesh = new THREE.Mesh(textplane,textplaneMaterial);//纹理贴图网格模型
+        // 移动模型
+        textMesh.translateX(1.1);
+        textMesh.translateY(0.5);
+        textMesh.translateZ(-1.2);
+        scene.add(textMesh);//平移纹理贴图网格模型
        
         var lightplane = new THREE.PlaneGeometry(12,60);
         var lightplaneMaterial = new THREE.MeshBasicMaterial();
@@ -372,7 +391,7 @@
                 //返回射线选中的对象
                 var intersects = raycaster.intersectObjects([pendantMesh]);
                 if (intersects.length > 0) {
-                    window.location = "https://nazawsze.github.io/storyweb/index2.html"
+                    window.location = "http://localhost:5500/index2.html"
                 }
         }
         document.body.addEventListener("click",clickEvent)

@@ -1,7 +1,7 @@
 body {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(-45deg,#e9dfde, #e675a2, #7dc9f2, #f2eb88);
+  background: linear-gradient(-45deg,#a5631c, #c34164, #536670, #bcbaba);
   background-size: 400% 400%;
   animation: moveBg 12s linear infinite;
 }
@@ -25,7 +25,7 @@ div,p,input,ul,li,h1,h2,h3 {
 }
 
 a {
-  color: #131313;
+  color: #151414;
   text-decoration: none;
 }
 .web{
@@ -47,8 +47,12 @@ a {
 }
 #nav ul li{
   float: left;
-  margin: 0px 43px;
+  width: 14.28%;
+ text-align: center;
 }
+#nav ul li:hover{ 
+  background:gray;
+} 
 #nav ul li a{
   line-height: 45px;
   font-size: 16px;
