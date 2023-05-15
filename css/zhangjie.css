@@ -1,0 +1,17 @@
+
+.wrapper{
+width: 100%;
+}
+.item{
+    float: left;
+    width: 14.28%;
+   text-align: center;
+   margin-top: 10px;
+   color: #000;
+   text-decoration: none;
+    
+}
+#wrapper a:hover{
+    color:rgb(0, 153, 255);
+
+}

@@ -1,0 +1,25 @@
+
+.hh{
+    margin-right: 60px;
+width: 100%;
+}
+.close {
+    color: #aaa;
+    float:left;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 30px;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.h1{
+    width: 90%;
+    word-wrap: break-word;
+}
+pre{
+    font-size: large;
+}

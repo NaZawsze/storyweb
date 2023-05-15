@@ -1,0 +1,201 @@
+
+
+iframe{
+	width: 100%;
+	margin:0px;
+}
+
+.all{
+	width: 100%;
+	height: 810px;
+	padding-bottom: 50px;
+	margin-top: -80px;
+	margin-bottom: 1px;
+}
+.all .content{
+	margin-top: 0px;
+	float: left;
+	line-height: 100px;
+}
+.all iframe{
+	border: 2px solid red; 
+}
+.ifooter{
+	height: 1000px;
+}
+#nav{
+	height: 45px;
+	width: 100%;
+	background: #313131;
+  }
+  #nav ul{
+	padding: 0px;
+  }
+  #nav ul li{
+	float: left;
+	width: 14.28%;
+   text-align: center;
+  }
+  #nav ul li:hover{ 
+	background:gray;
+  } 
+  #nav ul li a{
+	line-height: 45px;
+	font-size: 16px;
+	color: #ffffff;
+  }
+#content{
+/* border: 1px solid red;  */
+	width: 1200px;
+	margin-top: -80px;
+	margin: auto;
+}
+#content .a1{
+	float: left;
+	margin: left -10px;
+	margin-top: 30px;
+}
+#content .a1 .big{
+	/* float: left; */
+	width: 400px;
+	height: 500px;
+}
+.a11 ul li img{
+	border: 3px white solid;
+	width: 80px;
+	height: 80px;
+}
+.a11 ul li img:hover{
+	border: 3px #FF4F0D solid;
+}
+.a2{
+	float: left;
+	margin-left: 90px;	
+	width: 500px;
+}
+.a21 .color{
+	color: #758188;
+}
+.a21 .a211{
+	background-color: #F2F5F8;
+	color: #758188;
+}
+.a21 .a211 .prices,.shic{
+	margin-left: 40px;
+}
+.a21 .a211 .prices{
+	color: #9b8c87;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+	
+
+.a21 .a211 .yis{
+	margin-left: 230px;
+}
+.a22{
+	background-color: #F6F9FB;
+}
+.a22 span,p{
+	margin-top: 10px;
+}
+.a22 .neir{
+	margin-left: 50px;
+}
+.a23{
+	margin-top: 10px;
+}
+.a23 .mytt{
+	width: 5px;
+	word-break:break-all;
+	word-wrap:break-word;
+}
+
+.a25{
+	margin-top: 30px;
+}
+.a25 button{
+	display: inline-block;
+	width: 200px;
+	height: 60px;
+	border-radius: 30px;
+	margin-left: 30px;
+}
+.a25 .a25color1{
+	background-color: #FFEEE8;
+	color: #302d7e;
+	font-size: 20px;
+	font-weight: bolder;
+	border: 1px #7971ac solid;
+}
+.a25 .a25color2{
+	background-color: #c329298e;
+	color: white;
+	font-size: 20px;
+	font-weight: bolder;
+	border: 1px #fa0404 solid;
+}
+.a25 .modal {
+    display:none; /* 默认隐藏 */
+    position: fixed; /* 固定定位 */
+    z-index: 1; /* 设置在顶层 */
+    left: 450px;
+    top: 60px;
+    width: 36%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0); 
+    background-color: rgba(0, 0, 0, 0); 
+}
+.a25 .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #88888800;
+    width: 80%; 
+}
+.a25 .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.a25 .close:hover,
+.a25 .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.a25 .modal2 {
+	display: none; /* 默认隐藏 */
+    position: fixed; /* 固定定位 */
+    z-index: 1; /* 设置在顶层 */
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+.a25 .modal2-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 90px;
+    border: 1px solid #88888800;
+    width: 80%; 
+}
+.a25 .close2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.a25 .close2:hover,
+.a25 .close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+

@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>    
+<head>  
+<title>小说章节</title>
+    <link rel="stylesheet" href="css/zhangjie.css">  
+</head>  
+<body>  
+    <div id="wrapper" class="wrapper">   
+    </div>  
+    <script language='javascript'>
+		
+		
+		for(var i=0;i<100;i++){
+            var wrapp=document.getElementById('wrapper')
+			var div=document.createElement('div');
+            var a=document.createElement('a');
+			a.className="item";
+            a.innerText="第"+(i+1)+"回";
+            a.href="daogui"+(i+1)+".html";	
+            div.appendChild(a);
+			wrapper.appendChild(div);
+			}
+			
+		</script>
+
+</body>  
+</html>  
